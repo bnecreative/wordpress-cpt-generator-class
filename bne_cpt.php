@@ -345,32 +345,32 @@ if( !class_exists('BNE_CPT') ) {
 
 			// Default labels.
 			$labels = array(
-				'name'							=>	sprintf( esc_html__( '%s', $this->textdomain ), $plural ),
-				'singular_name'					=>	sprintf( esc_html__( '%s', $this->textdomain ), $singular ),
-				'menu_name'						=>	sprintf( esc_html__( '%s', $this->textdomain ), $plural ),
-				'all_items'						=>	sprintf( esc_html__( 'All %s', $this->textdomain ), $plural ),
-				'edit_item'						=>	sprintf( esc_html__( 'Edit %s', $this->textdomain ), $singular ),
-				'view_item'						=>	sprintf( esc_html__( 'View %s', $this->textdomain ), $singular ),
-				'update_item'					=>	sprintf( esc_html__( 'Update %s', $this->textdomain ), $singular ),
-				'add_new_item'					=>	sprintf( esc_html__( 'Add New %s', $this->textdomain ), $singular ),
-				'new_item_name'					=>	sprintf( esc_html__( 'New %s Name', $this->textdomain ), $singular ),
-				'parent_item'					=>	sprintf( esc_html__( 'Parent %s', $this->textdomain ), $plural ),
-				'parent_item_colon'				=>	sprintf( esc_html__( 'Parent %s:', $this->textdomain ), $plural ),
-				'search_items'					=>	sprintf( esc_html__( 'Search %s', $this->textdomain ), $plural ),
-				'popular_items'					=>	sprintf( esc_html__( 'Popular %s', $this->textdomain ), $plural ),
+				'name'				=>	sprintf( esc_html__( '%s', $this->textdomain ), $plural ),
+				'singular_name'			=>	sprintf( esc_html__( '%s', $this->textdomain ), $singular ),
+				'menu_name'			=>	sprintf( esc_html__( '%s', $this->textdomain ), $plural ),
+				'all_items'			=>	sprintf( esc_html__( 'All %s', $this->textdomain ), $plural ),
+				'edit_item'			=>	sprintf( esc_html__( 'Edit %s', $this->textdomain ), $singular ),
+				'view_item'			=>	sprintf( esc_html__( 'View %s', $this->textdomain ), $singular ),
+				'update_item'			=>	sprintf( esc_html__( 'Update %s', $this->textdomain ), $singular ),
+				'add_new_item'			=>	sprintf( esc_html__( 'Add New %s', $this->textdomain ), $singular ),
+				'new_item_name'			=>	sprintf( esc_html__( 'New %s Name', $this->textdomain ), $singular ),
+				'parent_item'			=>	sprintf( esc_html__( 'Parent %s', $this->textdomain ), $plural ),
+				'parent_item_colon'		=>	sprintf( esc_html__( 'Parent %s:', $this->textdomain ), $plural ),
+				'search_items'			=>	sprintf( esc_html__( 'Search %s', $this->textdomain ), $plural ),
+				'popular_items'			=>	sprintf( esc_html__( 'Popular %s', $this->textdomain ), $plural ),
 				'separate_items_with_commas'	=>	sprintf( esc_html__( 'Separate %s with commas', $this->textdomain ), $plural ),
-				'add_or_remove_items'			=>	sprintf( esc_html__( 'Add or remove %s', $this->textdomain ), $plural ),
-				'choose_from_most_used'			=>	sprintf( esc_html__( 'Choose from most used %s', $this->textdomain ), $plural ),
-				'not_found'						=>	sprintf( esc_html__( 'No %s found', $this->textdomain ), $plural ),
+				'add_or_remove_items'		=>	sprintf( esc_html__( 'Add or remove %s', $this->textdomain ), $plural ),
+				'choose_from_most_used'		=>	sprintf( esc_html__( 'Choose from most used %s', $this->textdomain ), $plural ),
+				'not_found'			=>	sprintf( esc_html__( 'No %s found', $this->textdomain ), $plural ),
 			);
 
 			// Default options.
 			$defaults = array(
 				'labels' 		=>	$labels,
-				'hierarchical'	=>	true,
+				'hierarchical'		=>	true,
 				'rewrite' 		=>	array(
-					'slug'		=>	$this->slug.'/'.$slug,
-					'with_front'	=>	false,
+					'slug'			=>	$this->slug.'/'.$slug,
+					'with_front'		=>	false,
 				),
 				'show_admin_column'	=>	true,
 			);
