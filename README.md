@@ -24,24 +24,22 @@ $cpt = new BNE_CPT( 'my_books_cpt_slug', array(
 
 3. Setup a custom Taxomony (basic usage). Going with our Books post type, we'll register a taxonomy for Genres.
 ```php
-$cpt->register_taxonomy( 'my_custom_taxonomy_name', array(
+$cpt->register_taxonomy( 'my_books_taxonomy_slug', array(
 	'singular'	=>	__( 'Genre', 'text-domain' ),
 	'plural'	=>	__( 'Genres', 'text-domain' ),
 	'slug'		=>	'categories',
 	'args'		=>	array(
 		'labels'	=>	array(
-			'menu_name'	=>	__( 'Genres', 'text-domain' ),
+			'menu_name'		=>	__( 'Genres', 'text-domain' ),
 		),
 		'show_admin_column'	=>	true,
 		'hierarchical'		=>	true,
-		'public'		=>	false,
 		'show_ui'		=>	true,
-		'show_tagcloud'		=>	false,
 		'show_in_nav_menus'	=>	false,
 		'show_admin_column'	=>	true,
-		'rewrite'		=>	false,
 	)
 ));
+
 ```
 
 4. If needed, assign your textdomain for translation.
